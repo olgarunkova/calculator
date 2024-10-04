@@ -29,9 +29,10 @@ items.forEach((button) => {
         result = operate();
         resultDisplay.textContent = `${result}`;
         expressionDisplay.textContent += ` = ${result}`;
-        currentState = "waitingForTheFirstNumber";
         num1 = result;
         num2 = 0;
+        currentState = "waitingForTheOperator";
+        expressionDisplay.textContent = `${result}`;
        };
     });
 });
