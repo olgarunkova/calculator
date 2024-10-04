@@ -34,11 +34,29 @@ body {
     width: 365px;
     height: 100px;
     margin-bottom: 10px;
+    text-align: right;
     background-color: #eaf8fa;
+    color: #602901;
     border-radius: 10px;
     box-shadow: 
                 0 0 0 5px #E3538D,
                 0 0 0 7px #602901;
+    display: flex;
+    flex-direction: column;
+}
+
+.expression {
+    font-size: 1.5rem;
+    color: #602901;
+    padding: 10px 5px 0 5px;
+}
+
+.result {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #602901;
+    padding-right:  5px;
+    margin-bottom: 10px;
 }
 
 .item {
@@ -47,6 +65,7 @@ body {
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
+    cursor: pointer;
     background-color: #CEEFFF;
     color: #602901;
     border: 2px solid #602901;
@@ -58,3 +77,4 @@ body {
     justify-content: center;
     align-items: center;
 }
+
