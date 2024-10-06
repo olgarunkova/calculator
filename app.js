@@ -106,15 +106,25 @@ dot.addEventListener("click", () => {
             num1 += dotValue;
             expressionDisplay.textContent = `${num1}`;
             resultDisplay.textContent = `${num1}`;
-        } 
+        };
 
         } else if (currentState === "waitingForTheSecondNumber") {
         if (!num2.includes(".")) {
             num2 += dotValue;
             expressionDisplay.textContent = `${num1} ${operator} ${num2}`;
             resultDisplay.textContent = `${num2}`;
-        }
-    };
+        };
+
+        } else if (currentState === "waitingForTheOperator") {
+            let dotResult = resultDisplay.textContent;
+            if (!dotResult.includes(".")) {
+                dotResult += ".";
+                resultDisplay.textContent = `${dotResult}`;
+                expressionDisplay.textContent = `${dotResult}`;
+                num1 = dotResult;
+                num2 = "";
+            };
+        };
 });
 
 backspace.addEventListener("click", () => {
