@@ -144,7 +144,7 @@ backspace.addEventListener("click", () => {
         let  backResult = resultDisplay.textContent.toString().slice(0, -1); 
         resultDisplay.textContent = `${backResult}`;
         expressionDisplay.textContent = "";
-        expressionDisplay.textContent += ` = ${backResult}`;
+        expressionDisplay.textContent += `${backResult}`;
         num1 = "";
         num2 = "";
     };

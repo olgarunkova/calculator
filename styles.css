@@ -78,3 +78,17 @@ body {
     align-items: center;
 }
 
+.item:hover {
+    transform: translateY(2px);
+    box-shadow: 
+                3px 3px 0 0 #37A7E3,
+                5px 5px 0 0 #602901;
+}
+
+.item:active {
+    transform: translateY(5px);
+    box-shadow: 
+                1px 1px 0 0 #37A7E3,
+                2px 2px 0 0 #602901;
+}
+
